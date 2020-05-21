@@ -7,7 +7,37 @@
     <title>Etch-a-Sketch</title>
 </head>
 <body>
-    <div id="container"></div>
+    <div class="" id="container">
+        <header id="page-title">
+            <h1>Etch-a-Sketch</h1>
+        </header>
+
+        <section id="grid-controls">
+            <form>
+                <label for="grid-size">Enter grid size:</label>
+                <input type="number" id="grid-size" name="grid-size">
+                <button id="new-grid">New grid</button>
+                <button id="reset-grid">Reset grid</button>                
+            </form>
+        </section>
+        
+        <div id="grid"></div>
+
+
+        <section id="grid-options">
+            <form>
+                <label for="black">Black</label>
+                <input type="radio" name="grid-options" id="black">
+
+                <label for="rainbow">Rainbow</label>
+                <input type="radio" name="grid-options" id="rainbow">
+
+                <label for="eraser">Eraser</label>                
+                <input type="radio" name="grid-options" id="eraser">
+            </form>
+        </section>
+    </div>
+    
     <script src="_js/index.js"></script>
 </body>
 </html>
