@@ -7,34 +7,37 @@
     <title>Etch-a-Sketch</title>
 </head>
 <body>
-    <div class="" id="container">
+    <div id="container">
         <header id="page-title">
             <h1>Etch-a-Sketch</h1>
         </header>
 
         <section id="grid-controls">
-            <form>
-                <label for="grid-size">Enter grid size:</label>
-                <input type="number" id="grid-size" name="grid-size">
-                <button id="new-grid">New grid</button>
-                <button id="reset-grid">Reset grid</button>                
-            </form>
+            
+            <label for="grid-size">Enter grid size:</label>
+            <input type="number" id="grid-size" name="grid-size" value="16">
+            <button id="new-grid">New grid</button>                            
+            
         </section>
         
         <div id="grid"></div>
 
 
         <section id="grid-options">
-            <form>
-                <label for="black">Black</label>
-                <input type="radio" name="grid-options" id="black">
-
-                <label for="rainbow">Rainbow</label>
-                <input type="radio" name="grid-options" id="rainbow">
-
-                <label for="eraser">Eraser</label>                
-                <input type="radio" name="grid-options" id="eraser">
-            </form>
+            
+            <label for="default">Default
+                <input type="radio" name="grid-options" id="default" value="default" checked>
+            </label>
+            
+            <label for="rainbow">Rainbow
+                <input type="radio" name="grid-options" value="rainbow" id="rainbow">
+            </label>
+            
+            <label for="eraser">Eraser
+                <input type="radio" name="grid-options" value="eraser" id="eraser">
+            </label>                
+            
+            
         </section>
     </div>
     
